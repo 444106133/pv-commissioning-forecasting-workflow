@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "Please cite the associated article when using this code."
+title: "Forecasting Newly Commissioned Photovoltaic Plants with Range-Gated Physical Features and Early Telemetry"
+type: software
+authors:
+  - family-names: "Bin Dayil"
+    given-names: "Abdulhakim M."
+    email: "444106133@student.ksu.edu.sa"
+    affiliation: "Department of Electrical Engineering, College of Engineering, King Saud University"
+  - family-names: "Bin Salamah"
+    given-names: "Yasser"
+    affiliation: "Department of Electrical Engineering, College of Engineering, King Saud University"
+  - family-names: "Al-Ammar"
+    given-names: "Essam A."
+    affiliation: "Department of Electrical Engineering, College of Engineering, King Saud University"
+repository-code: "https://github.com/444106133/pv-commissioning-forecasting-workflow"
+license: MIT
+year: 2026

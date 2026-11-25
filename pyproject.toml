@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pv-commissioning"
+version = "1.0.0"
+description = "Cross-site PV commissioning forecasting with range-gated physical features, TOST equivalence testing, and early-telemetry calibration"
+readme = "README.md"
+requires-python = ">=3.11"
+license = {text = "MIT"}
+authors = [
+    {name = "Abdulhakim M. Bin Dayil", email = "444106133@student.ksu.edu.sa"},
+    {name = "Yasser Bin Salamah"},
+    {name = "Essam A. Al-Ammar"},
+]
+dependencies = [
+    "numpy>=1.26.0",
+    "pandas>=2.1.0",
+    "scikit-learn>=1.5.0",
+]
+
+[project.optional-dependencies]
+full = [
+    "pyarrow>=15.0.0",
+    "xgboost>=2.1.0",
+    "lightgbm>=4.3.0",
+    "optuna>=3.6.0",
+    "pvlib>=0.10.0",
+]
+
+[project.urls]
+Repository = "https://github.com/444106133/pv-commissioning-forecasting-workflow"
+
+[project.scripts]
+pv-commissioning = "pv_commissioning.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
